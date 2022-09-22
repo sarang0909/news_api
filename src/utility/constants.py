@@ -1,7 +1,7 @@
 """Module contains constants used."""
 
 CONFIG_FILE = "config/app_config.json"
-NEWS_API_KEY = "cfc5fbb409644c28b837e9fe6554e80d"
+NEWS_API_KEY = "news_api_key"
 NEWS_SOURCES = "news_sources"
 LANGUAGE = "language"
 

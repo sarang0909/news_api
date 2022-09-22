@@ -1,5 +1,6 @@
 {
     "news_sources": "reuters,abc-news",
+    "news_api_key": "<YOUR_KEY>",
     "language": "en",
     "log_folder_path": "logs",
     "log_file_name": "news_api.log",

@@ -7,5 +7,9 @@ exclude = '''
   | build
   | dist
   | .*.pyc
+  | .*.yml
+  | .*.md
+  | .*.pylintrc
+  | LICENSE
 )
 '''

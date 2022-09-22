@@ -1,9 +1,11 @@
 """A News API module to get news articles.
 
 """
+
+import pandas as pd
 from newsapi import NewsApiClient
 from newspaper import Article
-import pandas as pd
+
 
 from src.utility import constants
 from src.utility.loggers import logger
@@ -23,7 +25,9 @@ class NewsAPIClient:
     def __init__(self):
         """Private constructor"""
 
-        self.__client = NewsApiClient(api_key=constants.NEWS_API_KEY)
+        self.__client = NewsApiClient(
+            api_key=config.get(constants.NEWS_API_KEY)
+        )
 
     def get_client(self):
         """A method to get the news api client
@@ -33,7 +37,9 @@ class NewsAPIClient:
         """
 
         if self.__client is None:
-            self.__client = NewsApiClient(api_key=constants.NEWS_API_KEY)
+            self.__client = NewsApiClient(
+                api_key=config.get(constants.NEWS_API_KEY)
+            )
         return self.__client
 
     def get_news(self, entity, num_articles=5):
