@@ -5,7 +5,7 @@
 In many use cases we need news articles data for ML model building or for any other purposes.  
 There are a lot of commercial as well as open source libraries avaialable to get news data.  
 <a href="https://newsapi.org/">Newsapi</a> is one such library. It has many APIs to get news data in different categories,format etc.  
-However,currently they don't provide complete news article text,so we've integrated newsapi with another amazing library <a href="https://newsapi.org/">newspaper3k</a>.     
+However,currently they don't provide complete news article text,so we've integrated newsapi with another amazing library <a href="https://newspaper.readthedocs.io/en/latest/">newspaper3k</a>.     
 This is a project developed to create an api application to access news articles given a query to search for.  
 
 ## Basics
