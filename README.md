@@ -59,10 +59,10 @@ config/app_config.json:
 
 Then start FastAPI server.
 
-1. Go inside 'Code_Template' folder on command line.  
+1. Go inside 'news_api' folder on command line.  
 2. Run:
   ``` 
-      conda activate code_template  
+      conda activate news_api  
       python main.py       
   ```
 3. Open 'http://localhost:5000/docs' in a browser.
@@ -91,21 +91,21 @@ Then start FastAPI server.
   ```
 
 ### Black- Code formatter
-1. Go inside 'Code_Template' folder on command line.
+1. Go inside 'news_api' folder on command line.
 2. Run:
   ``` 
       black src 
   ```
 
 ### Pylint -  Code Linting
-1. Go inside 'Code_Template' folder on command line.
+1. Go inside 'news_api' folder on command line.
 2. Run:
   ``` 
       pylint src  
   ```
 
 ### Containerization
-1. Go inside 'Code_Template' folder on command line.
+1. Go inside 'news_api' folder on command line.
 2. Run:
   ``` 
       docker build -t myimage .  
