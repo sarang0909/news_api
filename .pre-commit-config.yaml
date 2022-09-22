@@ -1,0 +1,16 @@
+repos:
+  - repo: local
+    hooks:
+      - id: black
+        name: Black Python code formatter
+        entry: black
+        language: python
+        types: [python]
+        args: [--config=pyproject.toml]
+      - id: pylint
+        name: pylint Python code linter
+        entry: pylint
+        language: python
+        types: [python]
+        args: [--rcfile=.pylintrc]
+      
